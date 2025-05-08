@@ -95,6 +95,9 @@ nav ul li a {
   nav ul li a {
     font-size: 8px;
   }
+  header{
+    margin-top: 5rem;
+  }
 }
 /* end Mobile responsiveness for nav*/
 
