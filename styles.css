@@ -64,7 +64,7 @@ nav ul {
 }
 
 nav ul li{
-    padding-left: 20px;
+    padding-left: 16px;
     transition: transform 0.2s ease-in-out;
 }
 nav ul li:hover{
