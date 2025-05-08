@@ -78,6 +78,25 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+/* end Mobile responsiveness for nav*/
 
 header {
     display: grid;
@@ -300,4 +319,16 @@ footer {
 
 .line{
     border-bottom: 1px solid var(--secondary);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .footer-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .right-footer h3 {
+    font-size: 20px;
+  }
 }
