@@ -39,7 +39,6 @@ body {
 .arabic .pricing-list li{
     text-align: right;
 }
-
 /* Floating WhatsApp Button */
 .floating-whatsapp {
     position: fixed;
@@ -64,7 +63,6 @@ body {
     transform: scale(1.1);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
-
 nav {
     z-index: 5;
     background-color: white;
@@ -82,6 +80,7 @@ nav {
     inset: 0% 0% auto;
 }
 
+
 nav ul {
     list-style: none;
     display: flex;
@@ -89,7 +88,7 @@ nav ul {
 }
 
 nav ul li{
-    padding-left: 20px;
+    padding-left: 16px;
     transition: transform 0.2s ease-in-out;
 }
 nav ul li:hover{
@@ -102,6 +101,29 @@ nav ul li a {
     font-size: 20px;
     font-weight: bold;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.5px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 40%;
+  }
+
+  nav ul li a {
+    font-size: 8px;
+  }
+  header{
+    margin-top: 5rem;
+  }
+}
+/* end Mobile responsiveness for nav*/
 
 header {
     display: grid;
@@ -143,6 +165,7 @@ header p {
 .whatsapp-btn:hover {
     transform: translateY(-5px);
 }
+
 
 h2{
     font-size: 2.5rem;
@@ -195,21 +218,10 @@ section {
     margin-bottom: 0.5rem;
 }
 
-.project-icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 20px;
-  margin-bottom: 0.5rem;
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
+.project i {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
 }
 
 .pricing-grid {
@@ -334,4 +346,16 @@ footer {
 
 .line{
     border-bottom: 1px solid var(--secondary);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .footer-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .right-footer h3 {
+    font-size: 20px;
+  }
 }
