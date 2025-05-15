@@ -25,7 +25,7 @@ html{
 }
 body {
     margin: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Fredoka', sans-serif;
     background-color: var(--secondary);
     color: var(--text-dark);
 }
@@ -38,6 +38,30 @@ body {
 }
 .arabic .pricing-list li{
     text-align: right;
+}
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 nav {
     z-index: 5;
@@ -80,6 +104,9 @@ nav ul li a {
 
 /* Mobile responsiveness */
 @media (max-width: 600px) {
+  body {
+    font-size: 1.5rem;
+  }
   nav {
     flex-direction: column;
     align-items: flex-start;
@@ -93,7 +120,7 @@ nav ul li a {
   }
 
   nav ul li a {
-    font-size: 8px;
+    font-size: 7px;
   }
   header{
     margin-top: 5rem;
@@ -194,10 +221,21 @@ section {
     margin-bottom: 0.5rem;
 }
 
-.project i {
-    font-size: 2rem;
-    color: var(--primary);
-    margin-bottom: 0.5rem;
+.project-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 .pricing-grid {
