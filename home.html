@@ -9,11 +9,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="k der.png" type="image/png">
 </head>
 <body>
+
+  <!-- Floating WhatsApp button -->
+  <div class="floating-whatsapp animate__animated animate__pulse animate__infinite">
+    <a href="https://wa.me/+201148102054">
+      <i class="fa-brands fa-square-whatsapp"></i>
+    </a>
+  </div>
+
   <nav>
     <a href="#left-head" class="logo-header">
         <img src="k_der-removebg-preview.png" alt="Kader Logo" height="80" width="80">
@@ -27,6 +35,9 @@
       <li><a href="#why">Why Kader
         <i class="fa-solid fa-question"style="color: var(--accent);font-size: 20px;"></i>
         </a></li>
+      <li><a href="#blog">Blog
+        <i class="fa-solid fa-blog" style="color: var(--accent);font-size: 20px;"></i>
+      </a></li>
       <li><a href="#pricing">Pricing
         <i class="fa-solid fa-money-bill-1-wave" style="color: var(--accent);font-size: 20px;"></i>
       </a></li>
@@ -45,7 +56,7 @@
 
   <header>
     <div id="left-head">
-      <h1>Today’s Generation <br> Tomorrow’s <span class="blue">Tech Leaders</span></h1>
+      <h1>Today’s Fun =<br> Tomorrow’s <span class="blue">Future!</span></h1>
       <p>✔️ <span class="blue">Live 1 : 1</span> Online coding classes for grades 1-12</p>
       <p>✔️ Accredited curriculum based on real-world projects</p>
       <p>✔️ World’s best instructors, in the comfort of home</p>
@@ -68,6 +79,7 @@
       <div class="tool">code.org & Roblox</div>
       <div class="tool">Web Development</div>
       <div class="tool">User Interface (UI & UX)</div>
+      <div class="tool">Graphic Design</div>
     </div>
   </section>
 
@@ -88,22 +100,52 @@
   <section id="projects">
     <h2>Projects</h2>
     <div class="projects-grid">
-      <div class="project"><i class="fas fa-cube"></i><br>mBlock</div>
-      <div class="project"><i class="fas fa-robot"></i><br>PictoBlox</div>
-      <div class="project"><i class="fas fa-code"></i><br>Code.org</div>
-      <div class="project"><i class="fas fa-paint-brush"></i><br>UI/UX</div>
-      <div class="project"><i class="fas fa-python"></i><br>Python</div>
-      <div class="project"><i class="fas fa-gamepad"></i><br>Game Dev</div>
-      <div class="project"><i class="fas fa-brain"></i><br>AI</div>
+      <div class="project">
+        <img src="https://store-images.s-microsoft.com/image/apps.22822.14131107520653996.1577fd72-d1b6-4328-9134-121e032a33d3.58139ca2-d47b-40a4-93bb-681cadec88a3" alt="mBlock" class="project-icon" />
+        <br>mBlock
+      </div>
+      <div class="project">
+        <img src="https://images.wakelet.com/resize?id=3e6b3cd0-d0bf-4b59-8891-57eccdeef02d&w=400&h=300&q=85" alt="PictoBlox" class="project-icon" />
+        <br>PictoBlox
+      </div>
+      <div class="project">
+        <img src="https://gamesandlearning.com/cdn/shop/products/codeorg2019_social.png?v=1585670914" alt="Code.org" class="project-icon" />
+        <br>Code.org
+      </div>
+      <div class="project">
+        <img src="https://images.icon-icons.com/2429/PNG/512/figma_logo_icon_147289.png" alt="UI/UX" class="project-icon" />
+        <br>UI/UX
+      </div>
+      <div class="project">
+        <img src="https://img.freepik.com/free-vector/flat-world-graphics-day-illustration_23-2148880103.jpg?semt=ais_hybrid&w=740" alt="UI/UX" class="project-icon" />
+        <br>Graphic Design
+      </div>
+      <div class="project">
+        <img src="https://149860134.v2.pressablecdn.com/wp-content/uploads/pythoned.png" alt="Python" class="project-icon" />
+        <br>Python
+      </div>
+      <div class="project">
+        <img src="https://www.hubspot.com/hubfs/web-development.webp" alt="UI/UX" class="project-icon" />
+        <br>Web Development
+      </div>
+      <div class="project">
+        <img src="https://m.media-amazon.com/images/I/717fKt2czYL.png" alt="Game Dev" class="project-icon" />
+        <br>Game Dev
+      </div>
+      <div class="project">
+        <img src="https://incubator.ucf.edu/wp-content/uploads/2023/07/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1-1500x1000.jpg" alt="AI" class="project-icon" />
+        <br>AI
+      </div>
     </div>
   </section>
+
 
   <section id="why">
     <h2>Why Kader</h2>
     <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
       
-      <div style="flex: 1 1 45%; background-color: var(--off-blue); color: white; padding: 1.5rem; border-radius: 50px; display: flex; align-items: center; gap: 1rem;">
-        <div style="background-color: aliceblue; width: 50px;height: 50px;border-radius: 50%;
+      <div style="flex: 1 1 45%; background-color: var(--off-blue); color: white; padding: 1.5rem; border-radius: 50px; display: flex; align-items: center; gap: 1rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+        <div style="background-color: aliceblue; width: 60px;height: 60px;border-radius: 50%;
         display: flex; justify-content: center; align-items: center;">
             <i class="fas fa-video fa-2x" style="color: var(--off-blue);font-size: 25px;"></i>
         </div>
@@ -113,8 +155,8 @@
         </div>
       </div>
   
-      <div style="flex: 1 1 45%; background-color: white; color: var(--text-dark); padding: 1.5rem; border-radius: 50px; display: flex; align-items: center; gap: 1rem;">
-        <div style="background-color: wheat; width: 50px;height: 50px;border-radius: 50%;
+      <div style="flex: 1 1 45%; background-color: white; color: var(--text-dark); padding: 1.5rem; border-radius: 50px; display: flex; align-items: center; gap: 1rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+        <div style="background-color: wheat; width: 60px;height: 60px;border-radius: 50%;
         display: flex; justify-content: center; align-items: center;">
         <i class="fas fa-microscope fa-2x" style="color: var(--accent);font-size: 25px;"></i>
         </div>
@@ -124,8 +166,8 @@
         </div>
       </div>
   
-      <div style="flex: 1 1 45%; background-color: white; color: var(--text-dark); padding: 1.5rem; border-radius: 50px; display: flex; align-items: center; gap: 1rem;">
-        <div style="background-color: wheat; width: 50px;height: 50px;border-radius: 50%;
+      <div style="flex: 1 1 45%; background-color: white; color: var(--text-dark); padding: 1.5rem; border-radius: 50px; display: flex; align-items: center; gap: 1rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+        <div style="background-color: wheat; width: 60px;height: 60px;border-radius: 50%;
         display: flex; justify-content: center; align-items: center;">
         <i class="fas fa-chalkboard-teacher fa-2x" style="color: var(--accent);font-size: 25px;"></i>
         </div>
@@ -135,8 +177,8 @@
         </div>
       </div>
   
-      <div style="flex: 1 1 45%; background-color: white; color: var(--text-dark); padding: 1.5rem; border-radius: 50px; display: flex; align-items: center; gap: 1rem;">
-        <div style="background-color: wheat; width: 50px;height: 50px;border-radius: 50%;
+      <div style="flex: 1 1 45%; background-color: white; color: var(--text-dark); padding: 1.5rem; border-radius: 50px; display: flex; align-items: center; gap: 1rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+        <div style="background-color: wheat; width: 60px;height: 60px;border-radius: 50%;
         display: flex; justify-content: center; align-items: center;">
         <i class="fas fa-road fa-2x" style="color: var(--accent);font-size: 25px;"></i>
         </div>
@@ -148,7 +190,6 @@
   
     </div>
   </section>
-  
 
   <section id="pricing">
     <h2>Pricing</h2>
@@ -249,7 +290,7 @@
             </div>
         </div>
         <div class="right-footer">
-            <h3>ONLINE TOUTORING</h3>
+            <h3>ONLINE TUTORING</h3>
             <ul>
                 <li>Artificial Intelligence</li>
                 <li>Virtual Reality</li>

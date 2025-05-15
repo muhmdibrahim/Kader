@@ -25,7 +25,7 @@ html{
 }
 body {
     margin: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Fredoka One', cursive;
     background-color: var(--secondary);
     color: var(--text-dark);
 }
@@ -39,6 +39,32 @@ body {
 .arabic .pricing-list li{
     text-align: right;
 }
+
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
 nav {
     z-index: 5;
     background-color: white;
@@ -56,7 +82,6 @@ nav {
     inset: 0% 0% auto;
 }
 
-
 nav ul {
     list-style: none;
     display: flex;
@@ -64,7 +89,7 @@ nav ul {
 }
 
 nav ul li{
-    padding-left: 16px;
+    padding-left: 20px;
     transition: transform 0.2s ease-in-out;
 }
 nav ul li:hover{
@@ -77,29 +102,6 @@ nav ul li a {
     font-size: 20px;
     font-weight: bold;
 }
-
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2.5px;
-  }
-
-  nav ul {
-    flex-direction: row;
-    align-items: flex-start;
-    width: 40%;
-  }
-
-  nav ul li a {
-    font-size: 8px;
-  }
-  header{
-    margin-top: 5rem;
-  }
-}
-/* end Mobile responsiveness for nav*/
 
 header {
     display: grid;
@@ -141,7 +143,6 @@ header p {
 .whatsapp-btn:hover {
     transform: translateY(-5px);
 }
-
 
 h2{
     font-size: 2.5rem;
@@ -194,10 +195,21 @@ section {
     margin-bottom: 0.5rem;
 }
 
-.project i {
-    font-size: 2rem;
-    color: var(--primary);
-    margin-bottom: 0.5rem;
+.project-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 .pricing-grid {
@@ -322,16 +334,4 @@ footer {
 
 .line{
     border-bottom: 1px solid var(--secondary);
-}
-
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  .footer-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .right-footer h3 {
-    font-size: 20px;
-  }
 }
