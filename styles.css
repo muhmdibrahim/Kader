@@ -113,11 +113,11 @@ nav ul li a {
   nav ul {
     flex-direction: row;
     align-items: flex-start;
-    width: 40%;
+    width: 45%;
   }
 
   nav ul li a {
-    font-size: 8px;
+    font-size: 7px;
   }
   header{
     margin-top: 5rem;
